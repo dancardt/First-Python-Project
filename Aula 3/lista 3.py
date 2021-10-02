@@ -31,22 +31,26 @@ media = soma / contagem
 print (f"A média da turma é {media}")
 print (f"Alunos presentes: {contagem}")
 
-mediasb = []
-mediasa = []
+#Exercício 3
 
-for i in range (len(notas)):
-  if nota > media:
-    mediasa.append(nota)
-else:
-  mediasb.append(nota)
+numeros = []
+maior = 0
+menor = 9999999
 
+for i in range (5) :
+  numero = int(input("Digite o número: "))
+  numeros.append(numero)
 
+for i in range (5):
+  if numeros[i] >maior:
+    maior=numeros[i]
+  if numeros [i] < menor:
+    menor = numeros [i]
 
+print (f"Os valores da lista são: {numeros}")
+print (f"O maior número é: {maior}")
+print (f"O menor número é: {menor}") 
 
-print(media)
-print(f"Existem {mediasa} alunos com a nota acima da média na turma ")
-
-#Exercício 3 - NAO FEITO
 
 #Exercício 4
 
@@ -60,7 +64,21 @@ print (list(reversed(numeros)))
 
 #Exercício 5
 
+lista1 = [2,4,6,8,10]
+lista2 = [3,4,7,8,10]
+
+print (f"Os valores na lista 1 são: {lista1}")
+print (f"Os valores na lista 2 são: {lista2}")
+
+count = 0
+for i in range (len(lista1)) :
+  if lista1[i] == lista2[i] :
+    count = count + 1
+
+print (f"Existem {count} números iguais na mesma posição. ")
+
 #Exercício 6
+
 
 #Exercício 7
 
